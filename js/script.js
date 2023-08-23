@@ -51,3 +51,15 @@ function quadrado(){
     var resultado = n1 * n1
     console.log(resultado)
 }
+function Raiz(){
+    var n1 = parseInt(prompt("digite o número que deseja saber a raiz quadrada: "))
+    var resultado = (Math.sqrt(n1))
+    console.log(resultado)
+}
+
+function Potência(){
+    var n1 = parseInt(prompt("digite o número a ser elevado: "))
+    var n2 = parseInt(prompt("digite o expoente: "))
+    var resultado = n1 ** n2
+    console.log(resultado)
+}
