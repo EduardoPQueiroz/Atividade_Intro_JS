@@ -63,3 +63,9 @@ function Potência(){
     var resultado = n1 ** n2
     console.log(resultado)
 }
+
+function addname(){
+    const addname = document.getElementById("addname").value
+    console.log(addname)
+    document.getElementById("showname").innerHTML = addname
+}

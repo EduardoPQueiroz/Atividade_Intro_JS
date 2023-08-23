@@ -48,7 +48,7 @@ a:hover::after, a:hover::before {
     align-items: center;
     justify-content: center;
 }
-#login, #calculator{
+#login, #calculator, #AddName{
    background-color: #F4EDED;
    display: flex;
    justify-content: space-evenly;
