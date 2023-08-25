@@ -22,6 +22,7 @@ function somar(){
     
     var resultado = n1 + n2 
     console.log(resultado)
+    alert(resultado);
 
 }
 
@@ -30,6 +31,7 @@ function subtrair(){
     var n2 = parseInt(prompt("digite o primeiro número: "))
     var resultado = n1 - n2
     console.log(resultado)
+    alert(resultado);
 }
 
 function multiplicar(){
@@ -37,6 +39,7 @@ function multiplicar(){
     var n2 = parseInt(prompt("digite o primeiro número: "))
     var resultado = n1 * n2
     console.log(resultado)
+    alert(resultado);
 }
 
 function dividir(){
@@ -44,17 +47,20 @@ function dividir(){
     var n2 = parseInt(prompt("digite o primeiro número: "))
     var resultado = n1 / n2
     console.log(resultado)
+    alert(resultado);
 }
 
 function quadrado(){
     var n1 = parseInt(prompt("digite o número a ser elevado ao quadrado: "))
     var resultado = n1 * n1
     console.log(resultado)
+    alert(resultado);
 }
 function Raiz(){
     var n1 = parseInt(prompt("digite o número que deseja saber a raiz quadrada: "))
     var resultado = (Math.sqrt(n1))
     console.log(resultado)
+    alert(resultado);
 }
 
 function Potência(){
@@ -62,10 +68,20 @@ function Potência(){
     var n2 = parseInt(prompt("digite o expoente: "))
     var resultado = n1 ** n2
     console.log(resultado)
+    alert(resultado);
 }
 
 function addname(){
     const addname = document.getElementById("addname").value
     console.log(addname)
     document.getElementById("showname").innerHTML = addname
+}
+
+function addlist(){
+    let addlist = document.getElementById("addlist").value
+    let li = document.createElement("li") 
+    li.innerHTML=addlist
+    // document.getElementById("produto").innerHTML = product
+    document.getElementById("showlist").appendChild(li)
+    console.log(product)
 }

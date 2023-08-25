@@ -5,8 +5,6 @@
 }
 body{
     background-color: #413f3d;
-    overflow: hidden;
-    
 }
 #menu{
     background-color: #464D77;
@@ -44,11 +42,11 @@ a:hover::after, a:hover::before {
 .container{
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 }
-#login, #calculator, #AddName{
+#login, #calculator, #AddName, #AddList{
    background-color: #F4EDED;
    display: flex;
    justify-content: space-evenly;
@@ -56,13 +54,14 @@ a:hover::after, a:hover::before {
    flex-direction: column;
    box-sizing: border-box;
    box-shadow: 0px 0px 10px 10px rgba(46, 41, 41, 0.555);
-   height: 60vh;
+   height: auto;
+   padding: 5em;
    width: 30vw;
    border-radius: 2.4em;
    margin: 5em;
 }
 .itens{
-    margin-top: 3em;
+    margin: 2em;
     font-weight: bold;
 }
 .input-wrapper input {

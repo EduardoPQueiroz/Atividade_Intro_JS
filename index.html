@@ -28,22 +28,35 @@
 			</div>
 			<div id="calculator">
 				<h3>OPERAÇÕES BÁSICAS COM JS</h3>
-				<button onclick="somar()">Somar</button>
-				<button onclick="subtrair()">Subtrair</button>
-				<button onclick="dividir()">Dividir</button>
-				<button onclick="multiplicar()">Multiplicar</button>
-				<button onclick="quadrado()">Quadrado</button>
-				<button onclick="Raiz()">Calcular a Raiz</button>
-				<button onclick="Potência()">Calcular a Potência</button>	
+				<button class="itens" onclick="somar()">Somar</button>
+				<button class="itens" onclick="subtrair()">Subtrair</button>
+				<button class="itens" onclick="dividir()">Dividir</button>
+				<button class="itens" onclick="multiplicar()">Multiplicar</button>
+				<button class="itens" onclick="quadrado()">Quadrado</button>
+				<button class="itens" onclick="Raiz()">Calcular a Raiz</button>
+				<button class="itens" onclick="Potência()">Calcular a Potência</button>	
 			</div>
 			<div id = "AddName">
 				<h3>ADICIONAR NOME INSERIDO AO HTML</h3>
+				<div class="input-wrapper">	
 					<input class="itens" id="addname" type="text" placeholder="Escreva o seu Nome."><br>
-					<button id="showname" onclick="addname()"></button>
+				</div>	
+					<button id="addname" onclick="addname()">Clique Aqui</button>
+					<p id="showname" class="itens">Resultado</p>
+			</div>
+			<div id = "AddList">
+				<h3>ADICIONAR ITENS A LISTA</h3>
+				<div class="input-wrapper">	
+					<input class="itens" id="addlist" type="text" placeholder="Insira um item a lista"><br>
+				</div>	
+					<button id="addlist" onclick="addlist()">Clique Aqui</button>
+					<ul id="showlist">
+						<li class="itens">Resultado</li>
+					</ul>
 			</div>
 		</div>
 		<div id="footer">
-
+			
 		</div>
 	</body>
 </html>
