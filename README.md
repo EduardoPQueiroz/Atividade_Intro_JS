@@ -1,1 +1,1 @@
-# Atividades de Introdução ao JS
+#Página na Web contendo Atividades de Introdução ao JS
