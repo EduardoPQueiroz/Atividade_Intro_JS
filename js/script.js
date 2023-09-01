@@ -85,3 +85,28 @@ function addlist(){
     document.getElementById("showlist").appendChild(li)
     console.log(product)
 }
+
+function addproduct(){
+    let addshoppingcart = []
+    let product = {
+        nome_prod : Arroz,
+        marca_prod : Campinas,
+        preço_prod : R$10
+    }
+    addshoppingcart.push(product);
+    
+    let product2={
+        nome_prod : Headset,
+        marca_prod : Kenzoos_Headsets,
+        preço_prod : R$405
+    }
+    addshoppingcart.push(product2);
+    
+    let product3={
+        nome_prod : Cadeira_Gamer,
+        marca_prod : Jamaal_Chairs,
+        preço_prod : R$699
+    }
+    addshoppingcart.push(product3); 
+    console.log(addshoppingcart);
+}
