@@ -87,33 +87,20 @@ function addlist(){
 }
 
 function addproduct(){
-    
-    let addshoppingcart = []
-    let product = {
-        nome_prod : "Arroz",
-        marca_prod : "Campinas",
-        preço_prod : "R$10"
+    const product = {
+       name: document.getElementById("addprodname").value,
+       marca: document.getElementById("addprodmark").value,
+       preco: document.getElementById("addprodprice").value,
     }
-    addshoppingcart.push(product);
-    
-    let product2 = {
-        nome_prod : "Headset",
-        marca_prod : "Kenzoos_Headsets",
-        preço_prod : "R$405"
-    }
-    addshoppingcart.push(product2);
-    
-    let product3 = {
-        nome_prod : "Cadeira_Gamer",
-        marca_prod : "Jamaal_Chairs",
-        preço_prod : "R$699"
-    }
-    addshoppingcart.push(product3); 
-    console.log(addshoppingcart);
-    
-     let iten = document.getElementById('addproduct').value
-     if (iten == product){
-         console.log(product)
-        }
-
+    const prod_item = document.createElement("li")
+    const prod_nome = document.createElement("h3")
+    const prod_marca = document.createElement("h4")
+    const prod_preco = document.createElement("p")
+    prod_nome.innerHTML = product.name;
+    prod_marca.innerHTML = product.marca;
+    prod_preco.innerHTML = product.preco;
+    prod_item.appendChild(prod_nome);
+    prod_item.appendChild(prod_marca);
+    prod_item.appendChild(prod_preco);
+    document.getElementById("showproduct").appendChild(prod_item)
 }
