@@ -109,4 +109,9 @@ function addproduct(){
     }
     addshoppingcart.push(product3); 
     console.log(addshoppingcart);
+    let item = document.getElementById(addproduct).value
+    if (item == nome_prod){
+        console.log(product)
+    }
+
 }
